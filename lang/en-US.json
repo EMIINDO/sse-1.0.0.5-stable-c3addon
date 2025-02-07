@@ -1,0 +1,82 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for SSE.",
+	"text": {
+		"plugins": {
+			"sse_plugin": {
+				"name": "SSE",
+				"description": "Server-Sent Events|A server-sent event is when a web page automatically gets updates from a server.",
+				"help-url": "https://github.com/SurenaMHZ/SSE_PluginC3",
+				"properties": {
+				},
+				"aceCategories": {
+					"connection": "connection",
+					"Support":"Support"
+				},
+				"conditions": {
+					"onnotSupport": {
+						"list-name": "On Not Support",
+						"display-text": "When a browser not supported server-sent events(SSE)",
+						"description": "When a browser not supported server-sent events(SSE)"
+					},
+					"onSupport": {
+						"list-name": "on Support",
+						"display-text": "When a browser supported server-sent events(SSE)",
+						"description": "When a browser supported server-sent events(SSE)"
+					},
+					"onerror": {
+						"list-name": "On Error",
+						"display-text": "When an error occurs |tag : {0}",
+						"description": "When an error occurs",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."}
+						}
+					},
+					"onopen": {
+						"list-name": "On Open",
+						"display-text": "When a connection to the server is opened |tag : {0}",
+						"description": "When a connection to the server is opened",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."}
+						}
+					},
+					"onmessage": {
+						"list-name": "On Message",
+						"display-text": "When a message is received |tag : {0}",
+						"description": "When a message is received",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."}
+						}
+					}
+				},
+				"actions": {
+					"connect": {
+						"list-name": "Connect",
+						"display-text": "SSE connect to url: {1} |tag : {0}",
+						"description": "connect to url",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."},
+							"url": { "name":"url", "desc":"Enter a url for connect."}
+						}
+					}
+				},
+				"expressions": {
+					"data": {
+						"description": "data callback",
+						"translated-name": "data",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."}
+						}
+					},
+					"error": {
+						"description": "error",
+						"translated-name": "error",
+						"params": {
+							"tag": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different URLs."}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"connection": {
+		"conditions": [
+			{
+				"id": "onerror",
+				"scriptName": "onerror",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag", "type":"string"}
+				]
+			},
+			{
+				"id": "onopen",
+				"scriptName": "onopen",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag", "type":"string"}
+				]
+			},
+			{
+				"id": "onmessage",
+				"scriptName": "onmessage",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag", "type":"string"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"id": "connect",
+				"scriptName": "connect",
+				"highlight": false,
+				"params": [
+					{"id":"tag", "type":"string"},
+					{"id":"url", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "data",
+				"expressionName": "data",
+				"scriptName": "data",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"tag", "type":"string"}
+				]
+			},
+			{
+				"id": "error",
+				"expressionName": "error",
+				"scriptName": "error",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"tag", "type":"string"}
+				]
+			}
+		]
+	},
+	"Support": {
+		"conditions": [
+			{
+				"id": "onSupport",
+				"scriptName": "onSupport",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onnotSupport",
+				"scriptName": "onnotSupport",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	}
+}
